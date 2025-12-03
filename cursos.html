@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToEfL - Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+<header class="encabezado encabezado-simple">
+    <nav class="barra-navegacion contenedor">
+        <a href="index.html" class="logo-enlace">
+            <img src="logo.png" alt="Logo ToEfL" class="logo-imagen">
+            <span class="logo-texto">ToEfL</span>
+        </a>
+
+        <button class="boton-menu" id="boton-menu" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <ul class="lista-navegacion" id="lista-navegacion">
+            <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+            <li><a href="acerca.html" class="enlace-navegacion">Acerca de</a></li>
+            <li><a href="cursos.html" class="enlace-navegacion activo">Cursos</a></li>
+            <li><a href="blog.html" class="enlace-navegacion">Blog</a></li>
+            <li><a href="contacto.html" class="enlace-navegacion">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contenedor seccion-contenido">
+    <section>
+        <h1 class="titulo-pagina">Nuestros cursos</h1>
+        <p>
+            Escoge el nivel que mejor se adapte a tu conocimiento actual. Puedes cambiar de nivel
+            si consideras que alguno es muy fácil o muy avanzado para ti.
+        </p>
+    </section>
+
+    <section class="rejilla-niveles" id="nivel-basico">
+        <article class="tarjeta-nivel">
+            <img src="basico.png" alt="Nivel básico" class="imagen-nivel">
+            <div class="contenido-nivel">
+                <h2>Básico</h2>
+                <p>
+                    Aprenderás:
+                </p>
+                <ul class="lista-detallada">
+                    <li>Abecedario y pronunciación básica.</li>
+                    <li>Saludos, presentaciones y frases útiles.</li>
+                    <li>Verbo to be, presente simple.</li>
+                    <li>Vocabulario cotidiano (familia, casa, colegio, comida).</li>
+                </ul>
+                <p class="texto-resumen-curso">
+                    Recomendado si nunca estudiaste inglés o si olvidaste casi todo.
+                </p>
+                <a href="contacto.html" class="boton boton-llenado ancho-completo">
+                    Me interesa el curso básico
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <section class="rejilla-niveles" id="nivel-intermedio">
+        <article class="tarjeta-nivel">
+            <img src="inter.png" alt="Nivel intermedio" class="imagen-nivel">
+            <div class="contenido-nivel">
+                <h2>Intermedio</h2>
+                <p>
+                    En este nivel vas a:
+                </p>
+                <ul class="lista-detallada">
+                    <li>Reforzar tiempos verbales (presente, pasado, futuro).</li>
+                    <li>Mejorar comprensión de textos y audios cortos.</li>
+                    <li>Construir párrafos y descripciones.</li>
+                    <li>Ampliar vocabulario académico y profesional.</li>
+                </ul>
+                <p class="texto-resumen-curso">
+                    Ideal si entiendes inglés básico pero te cuesta hablar o escribir con confianza.
+                </p>
+                <a href="contacto.html" class="boton boton-llenado ancho-completo">
+                    Me interesa el curso intermedio
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <section class="rejilla-niveles" id="nivel-intensivo">
+        <article class="tarjeta-nivel">
+            <img src="inten.png" alt="Nivel intensivo" class="imagen-nivel">
+            <div class="contenido-nivel">
+                <h2>Intensivo / Exámenes</h2>
+                <p>
+                    Enfocado en:
+                </p>
+                <ul class="lista-detallada">
+                    <li>Simulacros de exámenes cronometrados.</li>
+                    <li>Estrategias para lectura rápida.</li>
+                    <li>Comprensión de audios de nivel examen.</li>
+                    <li>Práctica de writing y speaking guiado.</li>
+                </ul>
+                <p class="texto-resumen-curso">
+                    Recomendado si ya manejas el idioma y quieres prepararte específicamente para
+                    un examen de certificación.
+                </p>
+                <a href="contacto.html" class="boton boton-llenado ancho-completo">
+                    Me interesa el curso intensivo
+                </a>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer class="pie-pagina">
+    <div class="contenedor pie-contenido">
+        <p>&copy; <span id="anio-actual"></span> ToEfL - Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/59176558972?text=Hola%20quiero%20infos%20sobre%20los%20cursos"
+   class="boton-whatsapp"
+   target="_blank">
+    <img src="whatsapp-svgrepo-com.svg" alt="WhatsApp" class="icono-whatsapp">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

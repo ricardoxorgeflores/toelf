@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToEfL - Inicio</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+<header class="encabezado">
+    <nav class="barra-navegacion contenedor">
+        <a href="index.html" class="logo-enlace">
+            <img src="logo.png" alt="Logo ToEfL" class="logo-imagen">
+            <span class="logo-texto">ToEfL</span>
+        </a>
+
+        <button class="boton-menu" id="boton-menu" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <ul class="lista-navegacion" id="lista-navegacion">
+            <li><a href="index.html" class="enlace-navegacion activo">Inicio</a></li>
+            <li><a href="acerca.html" class="enlace-navegacion">Acerca de</a></li>
+            <li><a href="cursos.html" class="enlace-navegacion">Cursos</a></li>
+            <li><a href="blog.html" class="enlace-navegacion">Blog</a></li>
+            <li><a href="contacto.html" class="enlace-navegacion">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="seccion-principal contenedor">
+        <div class="texto-principal">
+            <h1 class="titulo-principal">
+                Mejora tu inglés con <span class="texto-resaltado">ToEfL</span>
+            </h1>
+            <p class="parrafo-principal">
+                Plataforma especializada en la preparación para exámenes de inglés.
+                Aprende con materiales claros, niveles organizados y acompañamiento constante.
+            </p>
+            <div class="grupo-botones">
+                <a href="cursos.html" class="boton boton-llenado">Ver cursos</a>
+                <a href="contacto.html" class="boton boton-contorno">Hablar con asesor</a>
+            </div>
+        </div>
+
+        <figure class="imagen-principal">
+            <img src="11.png" alt="Estudiante aprendiendo inglés" class="imagen-responsiva">
+        </figure>
+    </section>
+</header>
+
+<main>
+
+    <section class="seccion-informacion contenedor">
+        <h2 class="subtitulo-seccion">¿Cómo te ayuda ToEfL?</h2>
+        <p class="parrafo-centrado">
+            Organizamos el contenido por niveles, desde lo básico hasta avanzado, para que puedas
+            avanzar a tu ritmo, con ejemplos prácticos, ejercicios y acompañamiento.
+        </p>
+
+        <div class="rejilla-caracteristicas">
+    <article class="tarjeta">
+        <h3 class="titulo-tarjeta">Niveles claros</h3>
+        <p>
+            Contenido dividido en básico, intermedio e intensivo para que avances a tu ritmo.
+        </p>
+    </article>
+
+    <article class="tarjeta">
+        <h3 class="titulo-tarjeta">Material práctico</h3>
+        <p>
+            Ejercicios reales, ejemplos y simulacros de examen.
+        </p>
+    </article>
+
+    <article class="tarjeta">
+        <h3 class="titulo-tarjeta">Acompañamiento</h3>
+        <p>
+            Resolvemos tus dudas por WhatsApp y te guiamos.
+        </p>
+    </article>
+</div>
+
+    </section>
+
+    <section class="seccion-niveles contenedor">
+        <h2 class="subtitulo-seccion">Niveles de estudio</h2>
+
+        <div class="rejilla-niveles">
+            <article class="tarjeta-nivel">
+                <img src="basico.png" alt="Curso básico" class="imagen-nivel">
+                <div class="contenido-nivel">
+                    <h3>Básico</h3>
+                    <p>
+                        Ideal si recién empiezas. Aprenderás vocabulario esencial, verbos básicos, 
+                        estructuras simples y comprensión de frases cotidianas.
+                    </p>
+                    <a href="cursos.html#nivel-basico" class="enlace-detalle">Ver temario</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-nivel">
+                <img src="inter.png" alt="Curso intermedio" class="imagen-nivel">
+                <div class="contenido-nivel">
+                    <h3>Intermedio</h3>
+                    <p>
+                        Para quienes ya dominan lo esencial. Mejora tu gramática, comprensión y 
+                        expresión oral en situaciones más complejas.
+                    </p>
+                    <a href="cursos.html#nivel-intermedio" class="enlace-detalle">Ver temario</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-nivel">
+                <img src="inten.png" alt="Curso intensivo" class="imagen-nivel">
+                <div class="contenido-nivel">
+                    <h3>Intensivo</h3>
+                    <p>
+                        Enfocado en preparación para exámenes. Simulacros, ejercicios cronometrados y 
+                        estrategias para mejorar tu puntaje.
+                    </p>
+                    <a href="cursos.html#nivel-intensivo" class="enlace-detalle">Ver temario</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="seccion-llamado contenedor">
+        <div class="bloque-llamado">
+            <h2>¿Listo para empezar?</h2>
+            <p>
+                Envía un mensaje por WhatsApp y te ayudamos a elegir el curso adecuado
+                según tu nivel y objetivo.
+            </p>
+            <a href="https://wa.me/59176558972?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20los%20cursos%20de%20ToEfL"
+               class="boton boton-llenado"
+               target="_blank">
+               Escribir por WhatsApp
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="pie-pagina">
+    <div class="contenedor pie-contenido">
+        <p>&copy; <span id="anio-actual"></span> ToEfL - Todos los derechos reservados.</p>
+        <p class="pie-texto-secundario">Desarrollado como proyecto académico.</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/59176558972?text=Hola%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20ToEfL"
+   class="boton-whatsapp"
+   target="_blank"
+   aria-label="Escríbenos por WhatsApp">
+    <img src="whatsapp-svgrepo-com.svg" alt="WhatsApp" class="icono-whatsapp">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
