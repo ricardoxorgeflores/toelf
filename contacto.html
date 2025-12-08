@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOELF - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+<header class="encabezado encabezado-simple">
+    <nav class="barra-navegacion contenedor">
+        <a href="index.html" class="logo-enlace">
+            <img src="img/logo.png" alt="Logo ToEfL" class="logo-imagen">
+            <span class="logo-texto">ToEfL</span>
+        </a>
+
+        <button class="boton-menu" id="boton-menu" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <ul class="lista-navegacion" id="lista-navegacion">
+            <li><a href="index.html" class="enlace-navegacion">Inicio</a></li>
+            <li><a href="acerca.html" class="enlace-navegacion">Acerca de</a></li>
+            <li><a href="cursos.html" class="enlace-navegacion">Cursos</a></li>
+            <li><a href="blog.html" class="enlace-navegacion">Blog</a></li>
+            <li><a href="contacto.html" class="enlace-navegacion activo">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contenedor seccion-contenido">
+    <section class="seccion-texto">
+        <h1 class="titulo-pagina">Contáctanos</h1>
+        <p>
+            Completa el formulario y te responderemos por WhatsApp. Procura escribir tus datos
+            correctamente para que podamos orientarte mejor.
+        </p>
+
+        <form id="form-contacto" class="formulario-contacto">
+            <div class="grupo-campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="curso">Curso de interés</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="Básico">Básico</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Intensivo / Exámenes">Intensivo / Exámenes</option>
+                    <option value="Aún no estoy seguro">Aún no estoy seguro</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
+            </div>
+
+            <button type="submit" class="boton boton-llenado ancho-completo">
+                Enviar a WhatsApp
+            </button>
+        </form>
+    </section>
+    <br>
+
+    <aside class="seccion-lateral">
+        <article class="tarjeta-lateral">
+            <h2>Horario de atención</h2>
+            <br>
+            <p><strong>Lunes a viernes:</strong> 9:00 - 12:00 y de 15:00 a 19:00</p>
+            <p><strong>Sábados:</strong> 9:00 - 13:00</p>
+            <p>Fuera de ese horario puedes escribir y te responderemos lo antes posible.</p>
+        </article>
+    </aside>
+</main>
+
+<footer class="pie-pagina">
+    <div class="contenedor pie-contenido">
+        <p>&copy; <span id="anio-actual"></span> TOEFL - Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/59176558972?text=Hola%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+   class="boton-whatsapp"
+   target="_blank">
+    <img src="img/whatsapp-svgrepo-com.svg" alt="WhatsApp" class="icono-whatsapp">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

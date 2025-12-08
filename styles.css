@@ -1,0 +1,427 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f5f5f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.texto-resaltado {
+    color: #1c4e80;
+    font-weight: 700;
+}
+
+.parrafo-centrado {
+    text-align: center;
+    max-width: 650px;
+    margin: 0.5rem auto 2rem;
+}
+
+.encabezado {
+    background: linear-gradient(135deg, #1c4e80, #325f9c);
+    color: #fff;
+    padding-bottom: 2.5rem;
+}
+
+.encabezado-simple {
+    padding-bottom: 1.2rem;
+}
+
+.barra-navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo-enlace {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-imagen {
+    width: 120px;
+    height: 60px;
+    margin-right: 0.6rem;
+}
+
+.logo-texto {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.boton-menu {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.lista-navegacion {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.enlace-navegacion {
+    color: #e5e9f0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 999px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.enlace-navegacion:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.enlace-navegacion.activo {
+    background-color: #fff;
+    color: #1c4e80;
+}
+
+
+.seccion-principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem 0 0;
+}
+
+.texto-principal {
+    color: #fff;
+}
+
+.titulo-principal {
+    font-size: clamp(1.8rem, 3vw + 1rem, 2.7rem);
+    margin-bottom: 0.8rem;
+}
+
+.parrafo-principal {
+    font-size: 0.98rem;
+    max-width: 480px;
+    margin-bottom: 1.2rem;
+}
+
+.grupo-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.boton {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 0.55rem 1.2rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.boton-llenado {
+    background-color: #fff;
+    color: #1c4e80;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.boton-llenado:hover {
+    background-color: #f0f4ff;
+}
+
+.boton-contorno {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.boton-contorno:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.imagen-responsiva {
+    max-width: 100%;
+    height: auto;
+}
+
+
+main {
+    padding: 2.5rem 0;
+}
+
+.subtitulo-seccion {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+
+.rejilla-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.tarjeta {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 8px rgba(9, 30, 66, 0.08);
+}
+
+
+.rejilla-niveles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta-nivel {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(9, 30, 66, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-nivel {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.contenido-nivel {
+    padding: 1.2rem;
+}
+
+
+.rejilla-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tarjeta-blog {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.3rem;
+    box-shadow: 0 2px 8px rgba(9, 30, 66, 0.08);
+}
+
+.texto-fecha {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.formulario-contacto {
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    padding: 1.3rem;
+    box-shadow: 0 2px 10px rgba(9, 30, 66, 0.08);
+}
+
+.grupo-campo {
+    margin-bottom: 0.9rem;
+}
+
+.grupo-campo label {
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.4rem;
+    border: 1px solid #cfd4da;
+    font-size: 0.92rem;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+    border-color: #1c4e80;
+    box-shadow: 0 0 0 2px rgba(28, 78, 128, 0.1);
+}
+
+
+.pie-pagina {
+    background-color: #111827;
+    color: #e5e7eb;
+    padding: 1.3rem 0;
+}
+
+.pie-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+
+.boton-whatsapp {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: #25d366;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 40;
+}
+
+.icono-whatsapp {
+    width: 26px;
+}
+
+
+@media (max-width: 768px) {
+
+    .boton-menu {
+        display: inline-block;
+    }
+
+    .lista-navegacion {
+        position: absolute;
+        top: 64px;
+        left: 5%;
+        right: 5%;
+        background-color: #1c4e80;
+        flex-direction: column;
+        border-radius: 0.7rem;
+        padding: 0.7rem;
+        display: none;
+    }
+
+    .lista-navegacion.mostrar {
+        display: flex;
+    }
+
+    .pie-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* === Interactividad adicional === */
+
+/* Botones con pequeño "bounce" */
+.boton:hover {
+    transform: translateY(-2px) scale(1.02);
+}
+
+/* Logo suave al pasar el mouse */
+.logo-enlace:hover .logo-imagen {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+/* Navegación: subrayado suave */
+.link-navegacion {
+    position: relative;
+    overflow: hidden;
+}
+
+.link-navegacion::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #ffda79;
+    transition: width 0.2s ease;
+}
+
+.link-navegacion:hover::after,
+.link-navegacion.activo::after {
+    width: 100%;
+}
+
+/* Tarjetas del home y cursos */
+.tarjeta,
+.tarjeta-nivel,
+.tarjeta-blog {
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.tarjeta:hover,
+.tarjeta-nivel:hover,
+.tarjeta-blog:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(9, 30, 66, 0.18);
+    border-color: rgba(28, 78, 128, 0.15);
+}
+
+/* Imágenes: zoom leve */
+.imagen-nivel,
+.blog-imagen,
+.imagen-responsiva {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.imagen-nivel:hover,
+.blog-imagen:hover,
+.imagen-responsiva:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.28);
+}
+
+/* Estilo de las imágenes del blog */
+.blog-imagen {
+    width: 100%;
+    border-radius: 0.9rem;
+    margin-bottom: 0.85rem;
+    object-fit: cover;
+}
+
+/* Sticky layout: footer siempre abajo */
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
